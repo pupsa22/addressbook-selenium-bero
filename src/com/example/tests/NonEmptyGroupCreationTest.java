@@ -16,13 +16,4 @@ public class NonEmptyGroupCreationTest extends TestBase {
 		submitGroupCreation();
 		returnToGroupsPage();
   }
-	@Test
-	public void testEmptyGroupCreation() throws Exception {
-		openMainPage();
-		goToGroupsPage();
-		initGroupCreation();
-		fillGroupForm(new GroupData("", "", ""));
-		submitGroupCreation();
-		returnToGroupsPage();
-		}
-	}
+}

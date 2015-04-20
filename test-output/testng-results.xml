@@ -1,103 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47660" started-at="2015-04-19T22:09:27Z" finished-at="2015-04-19T22:10:15Z">
+  <suite name="Default suite" duration-ms="86718" started-at="2015-04-20T00:55:38Z" finished-at="2015-04-20T00:57:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47660" started-at="2015-04-19T22:09:27Z" finished-at="2015-04-19T22:10:15Z">
-      <class name="com.example.tests.AlsoOfGroupCreationTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.AlsoOfGroupCreationTest@17ed40e0]" name="setUp" is-config="true" duration-ms="26002" started-at="2015-04-20T01:09:27Z" finished-at="2015-04-20T01:09:53Z">
+    <test name="Default test" duration-ms="86718" started-at="2015-04-20T00:55:38Z" finished-at="2015-04-20T00:57:04Z">
+      <class name="com.example.tests.EmptyContactCreation">
+        <test-method status="PASS" signature="testEmptyContactCreation()[pri:0, instance:com.example.tests.EmptyContactCreation@13b6d03]" name="testEmptyContactCreation" duration-ms="19733" started-at="2015-04-20T03:56:44Z" finished-at="2015-04-20T03:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyContactCreation -->
+      </class> <!-- com.example.tests.EmptyContactCreation -->
+      <class name="com.example.tests.NonEmptyContactCreation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.NonEmptyContactCreation@3ac42916]" name="setUp" is-config="true" duration-ms="22280" started-at="2015-04-20T03:55:38Z" finished-at="2015-04-20T03:56:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoOfGroupCreationTest@17ed40e0]" name="testEmptyGroupCreation" duration-ms="11637" started-at="2015-04-20T01:09:53Z" finished-at="2015-04-20T01:10:05Z">
+        <test-method status="PASS" signature="testNonEmptyContactCreation()[pri:0, instance:com.example.tests.NonEmptyContactCreation@3ac42916]" name="testNonEmptyContactCreation" duration-ms="22311" started-at="2015-04-20T03:56:12Z" finished-at="2015-04-20T03:56:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.AlsoOfGroupCreationTest@17ed40e0]" name="testNonEmptyGroupCreation" duration-ms="8980" started-at="2015-04-20T01:10:05Z" finished-at="2015-04-20T01:10:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNonEmptyGroupCreation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.AlsoOfGroupCreationTest@17ed40e0]" name="tearDown" is-config="true" duration-ms="857" started-at="2015-04-20T01:10:14Z" finished-at="2015-04-20T01:10:15Z">
+        </test-method> <!-- testNonEmptyContactCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.NonEmptyContactCreation@3ac42916]" name="tearDown" is-config="true" duration-ms="1191" started-at="2015-04-20T03:57:03Z" finished-at="2015-04-20T03:57:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.tests.AlsoOfGroupCreationTest -->
-      <class name="com.example.tests.GroupCreationTest">
-        <test-method status="FAIL" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTest@50cbc42f]" name="testEmptyGroupCreation" duration-ms="33" started-at="2015-04-20T01:09:53Z" finished-at="2015-04-20T01:09:53Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.example.tests.TestBase.openMainPage(TestBase.java:67)
-	at com.example.tests.GroupCreationTest.testEmptyGroupCreation(GroupCreationTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+      </class> <!-- com.example.tests.NonEmptyContactCreation -->
+      <class name="com.example.tests.EmptyGroupCreationTest">
+        <test-method status="PASS" signature="testEmptyGroupCreation()[pri:0, instance:com.example.tests.EmptyGroupCreationTest@f5f2bb7]" name="testEmptyGroupCreation" duration-ms="12047" started-at="2015-04-20T03:56:00Z" finished-at="2015-04-20T03:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyGroupCreation -->
-        <test-method status="FAIL" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.GroupCreationTest@50cbc42f]" name="testNonEmptyGroupCreation" duration-ms="5" started-at="2015-04-20T01:09:53Z" finished-at="2015-04-20T01:09:53Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.example.tests.TestBase.openMainPage(TestBase.java:67)
-	at com.example.tests.GroupCreationTest.testNonEmptyGroupCreation(GroupCreationTest.java:8)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+      </class> <!-- com.example.tests.EmptyGroupCreationTest -->
+      <class name="com.example.tests.NonEmptyGroupCreationTest">
+        <test-method status="PASS" signature="testNonEmptyGroupCreation()[pri:0, instance:com.example.tests.NonEmptyGroupCreationTest@282ba1e]" name="testNonEmptyGroupCreation" duration-ms="9054" started-at="2015-04-20T03:56:34Z" finished-at="2015-04-20T03:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNonEmptyGroupCreation -->
-      </class> <!-- com.example.tests.GroupCreationTest -->
+      </class> <!-- com.example.tests.NonEmptyGroupCreationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
