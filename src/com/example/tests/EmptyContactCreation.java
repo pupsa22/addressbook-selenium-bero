@@ -7,14 +7,14 @@ public class EmptyContactCreation extends TestBase {
 
   @Test
   public void testEmptyContactCreation() throws Exception {
-    openMainPage();
-    initContactCreation();
+    app.getNavigationHelper().openMainPage();
+    app.getContactHelper().initContactCreation();
     ContactData contact = new ContactData();
     contact.birthDay = "-";
     contact.birthMonth = "-";
     contact.group = "[none]";
-	fillContactForm(contact);
-    submitContactCreation();
-    returnToMainPage();
+	app.getContactHelper().fillContactForm(contact);
+    app.getContactHelper().submitContactCreation();
+    app.getContactHelper().returnToHomePage();
   }
 }
