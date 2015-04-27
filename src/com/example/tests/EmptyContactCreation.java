@@ -10,8 +10,8 @@ public class EmptyContactCreation extends TestBase {
     openMainPage();
     initContactCreation();
     ContactData contact = new ContactData();
-    contact.b_day = "-";
-    contact.b_month = "-";
+    contact.birthDay = "-";
+    contact.birthMonth = "-";
     contact.group = "[none]";
 	fillContactForm(contact);
     submitContactCreation();

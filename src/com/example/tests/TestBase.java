@@ -110,30 +110,30 @@ public class TestBase {
 
 	protected void fillContactForm(ContactData contact) {
 		driver.findElement(By.name("firstname")).clear();
-	    driver.findElement(By.name("firstname")).sendKeys(contact.first_name);
+	    driver.findElement(By.name("firstname")).sendKeys(contact.firstName);
 	    driver.findElement(By.name("lastname")).clear();
-	    driver.findElement(By.name("lastname")).sendKeys(contact.last_name);
+	    driver.findElement(By.name("lastname")).sendKeys(contact.lastName);
 	    driver.findElement(By.name("address")).clear();
 	    driver.findElement(By.name("address")).sendKeys(contact.address_1);
 	    driver.findElement(By.name("home")).clear();
-	    driver.findElement(By.name("home")).sendKeys(contact.home_num_1);
+	    driver.findElement(By.name("home")).sendKeys(contact.homeNum_1);
 	    driver.findElement(By.name("mobile")).clear();
-	    driver.findElement(By.name("mobile")).sendKeys(contact.mobile_num);
+	    driver.findElement(By.name("mobile")).sendKeys(contact.mobileNum);
 	    driver.findElement(By.name("work")).clear();
-	    driver.findElement(By.name("work")).sendKeys(contact.work_num);
+	    driver.findElement(By.name("work")).sendKeys(contact.workNum);
 	    driver.findElement(By.name("email")).clear();
 	    driver.findElement(By.name("email")).sendKeys(contact.mail_1);
 	    driver.findElement(By.name("email2")).clear();
 	    driver.findElement(By.name("email2")).sendKeys(contact.mail_2);
-	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.b_day);
-	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.b_month);
+	    new Select(driver.findElement(By.name("bday"))).selectByVisibleText(contact.birthDay);
+	    new Select(driver.findElement(By.name("bmonth"))).selectByVisibleText(contact.birthMonth);
 	    driver.findElement(By.name("byear")).clear();
-	    driver.findElement(By.name("byear")).sendKeys(contact.b_year);
+	    driver.findElement(By.name("byear")).sendKeys(contact.birthYear);
 	    new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contact.group);
 	    driver.findElement(By.name("address2")).clear();
 	    driver.findElement(By.name("address2")).sendKeys(contact.address_2);
 	    driver.findElement(By.name("phone2")).clear();
-	    driver.findElement(By.name("phone2")).sendKeys(contact.home_num_2);
+	    driver.findElement(By.name("phone2")).sendKeys(contact.homeNum_2);
 	}
 
 	protected void initContactCreation() {
