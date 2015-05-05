@@ -40,4 +40,23 @@ public class ContactHelper extends HelperBase {
 		click(By.linkText("home page"));
 	}
 
+	public void updateContact() {
+		click(By.xpath("//form[@action='edit.php']/input[@name='update']"));
+	}
+	
+	public void deleteContact() {
+		click(By.xpath("//form[@action='delete.php']/input[@name='update']"));
+	}
+
+	public void editContact(int index) {
+		click(By.xpath("//tbody/tr[" + (1 + index) + "]/td[7]/a/img"));
+	}
+
+	public void viewContact(int index) {
+		click(By.xpath("//tbody/tr[" + (1 + index) + "]/td[6]/a/img"));
+		click(By.name("modifiy"));
+	}
+
+
+
 }
