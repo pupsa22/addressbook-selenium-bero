@@ -21,7 +21,7 @@ public class ContactCreationNonEmptyTest extends TestBase {
     contact.birthDay = "22";
     contact.birthMonth = "July";
     contact.birthYear = "1990";
-    contact.group = "123";
+    contact.group = "Rob";
     contact.address_2 = "address 2";
     contact.homeNum_2 = "home num 2";
     app.getContactHelper().fillContactForm(contact);
