@@ -20,10 +20,20 @@ public class ContactData implements Comparable<ContactData>{
 	public ContactData() {
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "ContactData [name=" + name + "]";
+		return "ContactData [firstName=" + firstName + ", lastName=" + lastName
+				+ ", address_1=" + address_1 + ", homeNum_1=" + homeNum_1
+				+ ", mobileNum=" + mobileNum + ", workNum=" + workNum
+				+ ", mail_1=" + mail_1 + ", mail_2=" + mail_2 + ", birthDay="
+				+ birthDay + ", birthMonth=" + birthMonth + ", birthYear="
+				+ birthYear + ", group=" + group + ", address_2=" + address_2
+				+ ", homeNum_2=" + homeNum_2 + ", name=" + name + "]";
 	}
+
+
 
 	@Override
 	public int hashCode() {
