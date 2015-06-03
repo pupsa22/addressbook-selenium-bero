@@ -1,0 +1,37 @@
+<list>
+  <contact>
+    <firstName></firstName>
+    <lastName> </lastName>
+    <address__1> </address__1>
+    <homeNum__1> </homeNum__1>
+    <mobileNum></mobileNum>
+    <workNum></workNum>
+    <mail__1></mail__1>
+    <mail__2></mail__2>
+    <birthDay>-</birthDay>
+    <birthMonth>-</birthMonth>
+    <birthYear></birthYear>
+    <address__2></address__2>
+    <homeNum__2></homeNum__2>
+  </contact>
+  <contact>
+    <firstName>Max</firstName>
+    <lastName>Lawrence</lastName>
+    <address__1>test
+    test
+    test
+    test</address__1>
+    <homeNum__1>+7 978 0636585</homeNum__1>
+    <mobileNum>+7 978 0636586</mobileNum>
+    <workNum></workNum>
+    <mail__1></mail__1>
+    <mail__2>mail@mail.ru</mail__2>
+    <birthDay>22</birthDay>
+    <birthMonth>July</birthMonth>
+    <birthYear>1989</birthYear>
+    <address__2>test
+    1211463954
+    test</address__2>
+    <homeNum__2>test-145200627</homeNum__2>
+  </contact>
+</list>
